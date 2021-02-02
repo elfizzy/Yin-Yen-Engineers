@@ -1,38 +1,498 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+#about {
+  max-width: 100vw; 
+  height: 100vh;
+  background: url('./assets/building5.jpeg') no-repeat ;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+a button {
+  cursor: pointer;
+}
+.logo {
+  padding-right:40%;
+  padding-left: 30px;
+  padding-top: 20px;
+  float: left;
+  font-size: 35px;
+  color:rgb(241, 113, 113);
+}
+
+ul {
+  margin-left: 15px;
+  
+}
+.links {
+  float: right;
+  margin-right: 30px;
+}
+
+li {
+  float: left;
+  color:#d2ddff;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.about {
+  max-width: 100%;
+  margin: 40px auto;
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.aboutText {
+  max-width: 50%;
+  height: 60vh;
+  text-align: left;
+}
+  h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: wheat;
+  font-variant: small-caps;
+}
+
+.aboutText p {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  font-weight: lighter;
+  color: rgb(235, 196, 148);
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.aboutText h4 {
+  font-size: 16px;
+  line-height: 25px;;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  font-weight: lighter;
+  color: rgb(41, 31, 19);
+}
+.aboutPic {
+ margin-top: 30px;
+ padding-left: 100px;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #9ab9f7;
+  font-weight: lighter;
+}
+
+.achievements {
+  max-width: 100%;
+  height: 300px;
+  background-color: #282c34;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: url('./assets/building6.jpeg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  /* float: right; */
+  max-width: 80%;
+  margin: 50px auto;
+  /* padding-left: 14%; */
+  
+}
+
+.list {
+  padding-right: 30px;
+  margin: 100px auto;
+}
+.list h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e97e36;
+}
+
+.list h2 {
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+}
+
+.services {
+  max-width: 100%;
+  /* margin-right: 5%;
+  margin-left: 5%;
+  margin: 5% auto; */
+  /* border: 2px solid blue; */
+ 
+}
+
+.services h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContent {
+  max-width: 80%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 10px; */
+  /* border: 2px solid red; */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.services .contain {
+  width:350px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  /* height: 300px; */
+  margin-top: 30px;
+  margin-right: 20px;
+  /* float: left; */
+}
+
+.ico {
+  font-size: 70px;
+  color: #e97e36;
+
+}
+
+.article p:nth-child(1) {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 17px;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}
+
+.article p:nth-child(2) {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 17px;
+  line-height: 2rem;
+  font-weight: lighter;
+
+}
+
+.quote {
+  max-width: 100%;
+  height: 400px;
+  background-color: #9ab9f7;
+  /* margin-top: 40px; */
+  margin-bottom: 40px;
+}
+.quoteText {
+  margin: 50px auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.quoteText h1{
+  padding-top: 150px;
+  /* float: right; */
+  margin: 0 auto;
+  font-size: 25px;
   color: white;
+  line-height: 3rem;
+  text-transform: uppercase;
+  /* text-align: center; */
 }
 
-.App-link {
-  color: #61dafb;
+.gallery {
+  width: 100%;
+  margin: 80px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.galleryContent {
+  max-width:90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.galleryContent .contain {
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.contain img {
+  max-width: 500px;
+  margin: 10px auto;
+  height:250px;
+}
+
+
+.testimonial {
+  /* position: absolute; */
+  /* background: #5c97ff; */
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url('./assets/building3.jpeg');
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+/* .testimonial:before {
+  content: ' ';
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url('./assets/building3.jpeg');
+  background-size: cover;
+  opacity: 0.6;
+} */
+
+.quoteText1 {
+  width: 100%;
+}
+.quoteText1 img{
+ /* margin: 30px auto; */
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 20px 40%;
+}
+
+.textquote {
+  font-size: 16px;
+  line-height: 25px;;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+  margin-right: 30px;
+  margin-top: 30px;
+  z-index: 2;
+  /* margin: 30px 50px; */
+  color: rgb(41, 31, 19);
+  /* max-width: 500px; */
+}
+
+.containa {
+  max-width: 90%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  margin:30px auto;
+  padding-top: 100px;
+}
+
+.getForms {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact  {
+  /* display: flex; */
+  width: 45%;
+  line-height: 2.5rem;
+  font-weight: bolder;
+  text-align: left;
+  margin: 0 20px;
+
+}
+
+.form {
+  width: 100%;
+  line-height: 20px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 14px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #eceef3;
+  border-radius: 5px;
+  font-size: 24px;
+  /* background-color: gray;
+  border: 0.5px solid grey; */
+}
+
+input:focus {
+  background-color: white;
+  border: 1 solid #e0d9d9;
+}
+
+.form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  background: #eceef3;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  /* background-color: gray;
+  border: 0.5px solid grey; */
+}
+
+.contact p {
+  font-size: 1.1em;
+  font-weight: lighter;
+  color: rgb(231, 218, 218);
+}
+
+.contact p span {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.1rem;
+}
+.social {
+  font-size: 20px;
+  display: flex;
+}
+
+.socialIcons {
+  margin-right: 20px;
+  font-weight: lighter;
+  color: rgb(126, 120, 120);
+}
+  
+footer {
+  max-width: 100%;
+  height: 70px;
+  font-size: 16px;
+  background-color: brown;
+  color:rgb(255, 254, 254);
+  
+}
+
+.foot {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  
+}
+
+
+.foot .dev {
+  padding-left: 45%;
+  /* color: rgb(241, 113, 113); */
+  /* float: inline-end; */
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .topBar {
+    display: none;
+    max-width: 100%;
   }
+
+  #about {
+    max-width: 100%;
+    background-position:contain;
+    background-size: cover;
+  }
+
+  .links {
+    max-width: 100%;
+  }
+  
+  .about {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutText {
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  .aboutText p {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .aboutPic {
+    max-width: 80%;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+  }
+/* 
+  h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: left;
+  } */
+
+  .aboutText h4 {
+    font-size: 10px;
+    text-align: left;
+  }
+
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 0;
+  font-size: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: lighter;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #9ab9f7;
+}
+
+button:hover {
+  font-size: 15px;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: red;
+}
+
+.achievements {
+  max-width: 100%;
+  background-size: cover;
+  background-position: fixed;
+  max-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+
+
+
 }
