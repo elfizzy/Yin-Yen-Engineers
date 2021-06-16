@@ -12,6 +12,7 @@ export default class Service extends Component {
     return (
       <>
       <div className="services">
+      
         <h3>Our Services</h3>
         <div className="mainContent">
 
@@ -66,14 +67,14 @@ export default class Service extends Component {
           </div>
 
           <div className="contain">
-            <div className="icon">
-            <FaPencilRuler className="ico"/> 
+              <div className="icon">
+              <FaPencilRuler className="ico"/> 
+              </div>
+              <div className="article">
+              <p>DESIGN-BUILD</p>
+              <p>Our customers love the pace/quality tempo that we show during each of the principal construction processes!</p>
+              </div>
             </div>
-            <div className="article">
-            <p>DESIGN-BUILD</p>
-            <p>Our customers love the pace/quality tempo that we show during each of the principal construction processes!</p>
-            </div>
-          </div>
 
         </div>
       </div>

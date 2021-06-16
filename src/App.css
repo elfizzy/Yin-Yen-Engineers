@@ -34,7 +34,7 @@ ul {
 
 li {
   float: left;
-  color:#d2ddff;
+  /* color:#d2ddff; */
   font-size: 20px;
   list-style: none;
   text-decoration: none;
@@ -43,7 +43,7 @@ li {
 
 .about {
   max-width: 100%;
-  margin: 40px auto;
+  margin: 50px auto;
   display: flex;
   padding-right: 5%;
   padding-left: 5%;
@@ -60,7 +60,7 @@ li {
   font-weight: bolder;
   letter-spacing: 3px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: wheat;
+  color: rgb(119, 116, 109);
   font-variant: small-caps;
 }
 
@@ -104,9 +104,9 @@ button {
 
 .achievements {
   max-width: 100%;
-  height: 300px;
+  height: 350px;
   background-color: #282c34;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-top: 100px;
   margin-bottom: 100px;
   background: url('./assets/building6.jpeg') no-repeat;
@@ -116,7 +116,7 @@ button {
 .wrapper {
   display: flex;
   /* float: right; */
-  max-width: 80%;
+  max-width: 90%;
   margin: 50px auto;
   /* padding-left: 14%; */
   
@@ -126,18 +126,18 @@ button {
   padding-right: 30px;
   margin: 100px auto;
 }
-.list h1 {
+.list h4 {
   font-size: 50px;
   font-weight: bold;
-  color: #e97e36;
+  color:  rgb(119, 116, 109);
 }
-
 .list h2 {
   color: aliceblue;
   text-transform: uppercase;
-  font-weight: lighter;
+  position: relative;
+  font-weight: bold;
   letter-spacing: 0.1rem;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .services {
@@ -203,13 +203,15 @@ button {
   /* margin-top: 40px; */
   margin-bottom: 40px;
 }
+
+
 .quoteText {
-  margin: 50px auto;
+  margin: 10px auto;
   max-width: 60%;
   text-align: center;
 }
 
-.quoteText h1{
+.quoteText p{
   padding-top: 150px;
   /* float: right; */
   margin: 0 auto;
@@ -227,7 +229,7 @@ button {
 
 .galleryContent {
   max-width:90%;
-  margin: 30px auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -245,29 +247,17 @@ button {
 
 
 .testimonial {
-  /* position: absolute; */
-  /* background: #5c97ff; */
   max-width: 100%;
   height: 100vh;
-  margin: 0 auto;
-  background-image: url('./assets/building3.jpeg');
+  margin: 10 auto;
+  background-color: #cdd5e4;
   background-size: cover;
   margin-bottom: 70px;
 }
 
-/* .testimonial:before {
-  content: ' ';
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: url('./assets/building3.jpeg');
-  background-size: cover;
-  opacity: 0.6;
-} */
+.testimonial h3 {
+  padding-top: 10px;
+}
 
 .quoteText1 {
   width: 100%;
@@ -285,7 +275,7 @@ button {
   letter-spacing: 0.1rem;
   font-weight: lighter;
   margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
   z-index: 2;
   /* margin: 30px 50px; */
   color: rgb(41, 31, 19);
@@ -295,12 +285,13 @@ button {
 .containa {
   max-width: 90%;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
+  overflow: hidden;
   display: flex;
   text-align: left;
   flex-direction: row;
-  margin:30px auto;
-  padding-top: 100px;
+  margin:0 auto;
+  padding-top: 50px;
 }
 
 .getForms {
@@ -335,7 +326,7 @@ button {
   border: none;
   background: #eceef3;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 17px;
   /* background-color: gray;
   border: 0.5px solid grey; */
 }
@@ -351,15 +342,21 @@ input:focus {
   background: #eceef3;
   border: none;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 17px;
   /* background-color: gray;
   border: 0.5px solid grey; */
 }
-
+::placeholder {
+  color: rgb(126, 120, 120);;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 10px;
+}
 .contact p {
   font-size: 1.1em;
   font-weight: lighter;
-  color: rgb(231, 218, 218);
+  color: rgb(126, 120, 120);
+  /* color: rgb(231, 218, 218); */
 }
 
 .contact p span {
@@ -402,11 +399,12 @@ footer {
   /* float: inline-end; */
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 768px) {
   body {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     text-align: center;
+    box-sizing: border-box;
   }
   .topBar {
     display: none;
@@ -482,17 +480,95 @@ button:hover {
 }
 
 .achievements {
-  max-width: 100%;
-  background-size: cover;
-  background-position: fixed;
+  width: 100%;
+  /* background-size: cover; */
+  background-position: contain;
+  background-attachment:none;
   max-height: 100vh;
 }
 .wrapper {
   display: flex;
   flex-flow: column;
 }
+ .contain {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    /* width:  100%; */
+}
+.mainContent {
+  text-align: center;
 
+}
+.mainContent .article {
+  text-align: center;
+  margin: 10 auto;
+}
 
+.services {
+  margin-top: 450px;
+  /* text-align: center; */
+}
 
+.mainContent {
+  width: 100%;
+  /* margin: 0px auto; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* gap: 10px; */
+  /* border: 2px solid red; */
+
+}
+
+.article p{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.quoteText {
+  max-width: 100%;
+}
+
+.galleryContent {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial {
+  max-width: 100vw;
+  text-align: center;
+  height: 100%;
+
+}
+.contact {
+  display: none;
+}
+   .containa {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* margin: 20px auto; */
+  /* max-height: fit-content; */
+
+}
+
+.quoteText1 {
+  max-width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.quoteText1 img {
+  margin: 0 auto;
+}
+.textquote {
+  margin: 0 auto;
+}
+
+.getForms {
+  display: flex;
+  flex-direction: column;
+}
 
 }

@@ -14,13 +14,12 @@ export default class About extends Component {
               planning and correlating that were all involved in completing each separate project,
                then our productivity is immense!</h4>
 
-              <a href="#"><button>Contact Us</button></a>
+              <a href="#"><button>Contact us</button></a>
         </div>
         <div className="aboutPic">
-          <img style={{maxWidth:"100%",paddingRight:"5%"}} src={"./dumbell.jpeg"} alt=""/>
+          <img style={{maxWidth:"100%",paddingRight:"5%"}} src="./building6.jpeg" alt=""/>
         </div>
-        
-      
+
       </div>
       </>
     )

@@ -51,7 +51,7 @@ export default class Slides extends Component {
     </Carousel> */}
 
 <section id="about" styles={{}}>
-  <div className="logo">
+  {/* <div className="logo">
     Logo
   </div>
   <div className= "links">
@@ -61,7 +61,7 @@ export default class Slides extends Component {
       <li>Contact</li>
       <li>Social</li>
     </ul>
-  </div>
+  </div> */}
   
 </section>   
       </div>

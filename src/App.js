@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from "./components/Contact";
+import Navs from "./components/Navs";
 import Slides from "./components/Slides";
 import About from "./components/About";
 import Count from "./components/Count";
@@ -14,7 +15,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <Contact />
+     {/* <Contact /> */}
+     <Navs/>
      <Slides />
      <About />
      <Count />
